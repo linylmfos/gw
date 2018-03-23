@@ -1,0 +1,29 @@
+/*nav css */
+.nav .menu .navItemActive > a{ color: #FFFFFF !important;font-size: 3.6rem; }
+.nav .menu .navItemActive{background-color: #4A90E2; color: #FFFFFF; }
+
+
+.smartSale{width: 100%;margin:0 auto;}
+.smartSale .saleContentWrap{width:1366px;margin:0 auto;}
+.smartSale .saleHeader .iconAndTitle .iconDesc
+{ font-family: "PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial" !important; 
+    margin-top:2rem; margin-left: 3rem; width: 33.6rem;height: 6rem;text-align: center;padding:2rem 0.8rem;
+    border-radius: 3.4rem;background-color: #E8331F;color:#FFFFFF; font-family: "PingFangSC-Medium"; font-size: 6rem;line-height: 6rem;font-weight:bold;}
+.smartSale .saleServiceCategory > ul > li{margin-bottom: 4rem;height: auto;}
+.smartSale:hover{border-top:solid 1px #5395E3;} 
+.smartSale .saleServiceCategory .side{float:left; width: 20rem;height:4.8rem;margin-right: 2rem;margin-top: 2rem; text-align: center;padding: 0.6rem 1.5rem; border-radius: 3rem;
+font-family: "PingFangSC-Medium"; font-size: 2.4rem; line-height: 4.8rem; color: #FFFFFF;}
+.smartSale .saleServiceCategory .clientManage { font-family: "PingFangSC-Light","PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial";background-color: #DE6514; }
+.smartSale .saleServiceCategory .saleLevel { font-family: "PingFangSC-Light","PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; background-color: #D9C66A; }
+.smartSale .saleServiceCategory .groupSent{font-family: "PingFangSC-Light","PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; background-color: #A6AB1B;}
+.smartSale .saleServiceCategory .webCS{font-family: "PingFangSC-Light","PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; background-color: #3A7587;}
+.smartSale .saleServiceCategory .wechatCS {font-family: "PingFangSC-Light","PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; background-color: #8C615B;}
+.smartSale .saleServiceCategory .qqCS{ font-family: "PingFangSC-Light","PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; background-color: #C95B19;}
+.smartSale .saleServiceCategory .potentialCustomer{ font-family: "PingFangSC-Light","PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; background-color: #D62C29;}
+.smartSale .saleServiceCategory .saleRate{ font-family: "PingFangSC-Light","PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; background-color: #BC358E;}
+.smartSale .saleServiceCategory .side
+{ font-family: "PingFangSC-Medium","PingFang-Regular",  "WenQuanYi Micro Hei", "Helvetica Neue","Helvetica", "Hiragino Sans GB",  "tahoma","sans-serif","Microsoft YaHei","Arial"; }
+.smartSale .saleServiceCategory .main
+{ font-family: "PingFangSC-Medium","PingFang-Regular",  "WenQuanYi Micro Hei", "Helvetica Neue","Helvetica", "Hiragino Sans GB",  "tahoma","sans-serif","Microsoft YaHei","Arial";
+     overflow: hidden;height: auto;font-size: 2.6rem;letter-spacing:3px;padding-top: 3rem; }
+

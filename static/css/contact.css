@@ -1,0 +1,26 @@
+
+/*contact css*/
+img {width: auto;height: auto;}
+.contactInfo{width: 100%;height: auto; display: block;}
+.szAnddg{margin: 0 108px;margin-top: 46px;}
+.contactInfo:hover{ border-top: solid 1px #4A90E2;} 
+.contactInfo .companyInfo{width: calc(100% - 216px);min-width: 1150px;height: 25.4%;min-height: 320px;}
+.contactInfo .companyInfo .szCompany
+{margin-bottom: 10px;font-family: "PingFangSC-Medium","PingFang-Regular",  "WenQuanYi Micro Hei", "Helvetica Neue","Helvetica", "Hiragino Sans GB",  "tahoma","sans-serif","Microsoft YaHei","Arial";
+    font-size: 2.8rem;color: #4A90E2 ; }
+.contactInfo .companyInfo .dgCompany > li > span { font-family:  "PingFangSC-Medium","PingFang-Regular",  "WenQuanYi Micro Hei", "Helvetica Neue","Helvetica", "Hiragino Sans GB",  "tahoma","sans-serif","Microsoft YaHei","Arial"!important; } 
+
+.contactInfo .companyInfo .szCompany > li >img{margin-right: 30px;}
+.contactInfo .companyInfo .dgCompany > li >img{margin-right: 30px;}
+.contactInfo .companyInfo .szCompany > li > .fa-map-marker {margin-right: 30px;color: #E65C4A;}
+.contactInfo .companyInfo .szCompany > li > .fa-bus {margin-right: 30px;color: #2C61AB;}
+.contactInfo .companyInfo .szCompany > li > .fa-phone {margin-right: 30px;color: #14AC1F;}
+.contactInfo .companyInfo .szCompany > li > .fa-envelope {margin-right: 30px;color: #F44336;}
+
+.contactInfo .companyInfo .dgCompany > li > .fa-map-marker {margin-right: 30px;color: #E65C4A;}
+.contactInfo .companyInfo .dgCompany > li > .fa-bus {margin-right: 30px;color: #2C61AB;}
+.contactInfo .companyInfo .dgCompany > li > .fa-phone {margin-right: 30px;color: #14AC1F;}
+.contactInfo .companyInfo .dgCompany > li > .fa-envelope {margin-right: 30px;color: #F44336;}
+.contactInfo .companyInfo .dgCompany li>span{font-family: "PingFangSC-Medium";font-size: 2.8rem;color: #4A90E2 ;}
+.contactInfo .companyMap{margin: 0 auto;height: 486px;width: 100%;margin-bottom: 30px;}
+.contactInfo .companyMap #companyMapContainer{	max-width: 100%;min-width: 1150px;	margin: 0 auto;}

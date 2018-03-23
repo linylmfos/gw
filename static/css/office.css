@@ -1,0 +1,27 @@
+/*cloudOffice css*/
+.officeContent{width: 100%;margin:0 auto;}
+.officeContent:hover{ border-top:solid 1px #4A90E2; }
+.officeContent .officeContentContainer{width: 1366px;margin:0 auto;}
+.attend{  overflow: hidden; }
+.leftArrowWrap {overflow: hidden;}
+.parentWrap{    overflow: hidden;border-bottom: solid 1rem #F6F6F6;}
+.parent{ overflow: hidden; margin-right: -2rem;}
+.parentWrap .child .in > .title{font-family:"PingFangSC-Medium","PingFangSC-Light","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial";
+     font-size: 4.4rem;font-weight: bold; color: #3690BF;padding-top: 3rem;padding-bottom: 8px;}
+.parentWrap .child .fontControl > ul > li 
+{  font-family: "PingFangSC-Medium","PingFang-Regular",  "WenQuanYi Micro Hei", "Helvetica Neue","Helvetica", "Hiragino Sans GB",  "tahoma","sans-serif","Microsoft YaHei","Arial";
+     color: #333333; font-size: 2.8rem;line-height: 4.6rem; }
+.parentWrap .child{box-sizing: border-box;  width: 50%;}
+.parentWrap .leftChild{ float: left; padding-right: 50px; }
+.parentWrap .rightChild{ float: right !important; padding-left: 5rem; }
+.in{  margin-right: 3rem;height: auto;}
+.officeContent .officeHeader {height: 20rem; padding-top: 10rem;}
+.officeContent .officeHeader .officeIconWrap {width: 17rem;padding-left: 11rem;margin-right: 8rem;}
+.officeContent .officeHeader .officeIconWrap>img{ width: 100%; }
+.officeContent .officeHeader .iconDesc{ margin-top: 3rem;height: 10rem;width: 34rem;
+    border-radius: 3rem;background: #1DA4D9;color:#FFFFFF;text-align: center; }
+.officeContent .officeHeader .iconDesc > span{ display: inline-block; 
+    font-family:"PingFangSC-Medium","PingFangSC-Light","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial";
+     font-size: 5rem;line-height: 10rem; color:#FFFFFF;font-weight: bold; }
+.officeContent .officeMain {padding: 0 10.8rem; position: relative;}
+.officeContent .officeMain .parentWrap .child .in > img {width: 100% !important;height:100% !important;}

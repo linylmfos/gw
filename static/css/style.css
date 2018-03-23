@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: PingFangSC-Light;
+    src: url("../common/font/PingFangSC-Light.ttf");
+}
+@font-face {
+    font-family: PingFangSC-Medium;
+    src: url("../common/font/PingFangSC-Medium.ttf");
+}
+
+
+/*common css*/
+* {margin: 0;padding: 0;text-decoration: none;}	
+html{margin: 0;padding: 0; font-size: 62.5%; }
+body { min-width:1200px; background-color: #ffffff;height: 100%; font-size: 1rem;line-height: 1;color: #333; 
+    font-family: "PingFangSC-Light", "PingFangSC-Medium","PingFang-Regular",  "WenQuanYi Micro Hei", "Helvetica Neue","Helvetica", "Hiragino Sans GB",  "tahoma","sans-serif","Microsoft YaHei","Arial" ;font-weight: normal;box-sizing: border-box;}
+ul li {list-style: none; }
+input { margin:0;padding:0; }
+a{text-decoration:none;}
+input{border-width: 0px;}
+/* img {width: 100%; height: 100%;} */
+.fl{float:left}
+.fr{float: right;}
+.clearfix:after {content: "."; display: block; clear: both; visibility: hidden;line-height: 0;height: 0; font-size:0;}
+.clearfix { *zoom:1;}	
+
+/*homepage css*/
+.header, .logoSearch{padding: 0 3rem;}
+
+/* header css*/
+.header{background-color: #C8DDF6;height: 3.6rem; }
+.header .shortcut .logRegister{margin: 0; padding-left: 0;}
+.header .shortcut .logRegister .company{color:#5B9AE5;}
+.header .shortcut .logRegister > li >.login{display: inline-block; color:#CE2C45; font-size: 1.8rem;line-height: 3.6rem;padding: 0rem 0;}
+.header .shortcut .logRegister  .register{padding-left: 1.5rem;display: inline-block;font-size:1.8rem;line-height: 3.6rem;padding:0rem 0; } 
+.header .shortcut .logRegister > li{
+    float: left;height: 3.6rem;font-size:1.8rem; line-height:3.6rem; padding:0rem 2rem 0rem 0;}
+.header .shortcut .logRegister > li > .welcome{ display: inline-block; color:#5A5F66; font-size: 1.8rem; color: #3E3F41;line-height: 3.6rem; padding: 0rem 0; }
+.header .shortcut .logRegister >.welcome > .company:hover{text-decoration: none;}
+.header .shortcut .language {margin: 0;}
+.header .shortcut .language li{display: inline-block;height: 3.6rem;}
+.header .shortcut >span{ font-size: 1.8rem; line-height: 3.6rem; color: #000000;padding: 0  rem 0;}
+.header .shortcut li>a{font-size: 1.8rem; line-height: 3.6rem; color:#000000;padding: 0rem 0;}
+.header .shortcut .language .zh{color:#CF061F}
+.header .shortcut .language  .language-zh .zh > i { display: inline-block;position: absolute;top:1rem; height: 2.4rem; width: 2.4rem;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAApgAAAKYB3X3/OAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEtSURBVEiJ7ZW/SgNBEIe/2b3LoaYwf0CE2AgWESx8hzyGNiIWgnmY1HaiL2BlbZnCQsQicGAhYmNADV5O3bGREyPJhcudhfjrFma/387O7KyoKkXKFEr/DQMPIGxWNwTdRWQpF6rqvSKHq9cPlxKuV7ZQPcoFPCqRbYPT9qSY6k6ErWRsBKdtCZuLE3cHa+/ENxaNs3n8KLK/4r6thz0LDsTLyaC2F2FHkiq3YsqtbCkkVzS3+UZtP8Jfdrhn4fG0RP8kAAXkMzpDKZIMXi48ns58EHi9M/SPgwToNxx+w41jTGcAICW4PVggurKY+a/jenWHV89mkNpFsyp1VMz0DqYxGJz7uIGkhY1VancPezYzHP7CuDYo3cLoStdgpFOYgZGOqGqxH87/p5+mD12KZapK0STCAAAAAElFTkSuQmCC");background-repeat: no-repeat; }
+.header .shortcut .language .language-en .en > i { 
+    display: inline-block;height: 2.4rem; width: 2.4rem; position: absolute; top:1rem; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAACmAAAApgHdff84AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAATtQTFRF////QUebTFGgWFymw8TcxcDX74SP74SQ5dbg74CM8HyI5szW6MDK8ZKb8o+YQUebQkibQkicSU+fTFGgTFKhWV6naW2vcnazeHy3io2/kJPDqq3Qq6vOrqjKr7HSsq7OtKrKx8neysLWysPYzc7h0MXY0cTW39/p3+Dq4uHp4uLq4+Ps5cPN58vU6LfB6b/I6cDJ67K66+nu6+vw7urt7u3w8MPJ8MXM8u7w8vL0873D88HG9cXK9eDi9eLk9sLG9t7f9t7g9uPk987R99bY99vd+Lq9+MrN+aOo+aqu+aqv+a6y+bG1+bK2+bS4+ba6+pOZ+pug+p2i+p+k+qSp+qar+11n+4eN+4qR+4+V+5KY/HZ9/Hh//HuC/H6F/Whw/Whx/Wpy/Wtz/Wx0/W11/W52/XB4/XR7/0tVSczttwAAAA90Uk5TAODi4/X1+vr7+/v8/P39jv0hXwAAAOdJREFUKJFjYKADYOdgYWYEASaesDAeJjCTmZWPjcEwwc1YUoCfn1/EPSPDXQTIEJA0S/TUYhBWiIhzUhRFSIgqRcY4ygkz8POL6yX6mEoJQiQEpazifTXE+fmBEvxCsgExDipiIAkxtfA4O2khoCCDCAhIGKT5WYIk7JPdtCXAQgzucOCVkeGF4DFk4AC4JXAaBbFc2z/FBmS5RXC0LtRykHOlbWMjVCHOVXFO8pABOxfoQXXveGuEB02CUnVAHhSWc02PUkYOEkWXtEB5YQbNkERz9EA0Ck3UZ+DkZcUMdhZuLnpEOQBuvE/QRS7WhQAAAABJRU5ErkJggg==");background-repeat: no-repeat; }
+.header .shortcut .language .language-zh .zh > span{display:inline-block; font-size:1.8rem;line-height: 3.6rem;  padding: 0;}
+.header .shortcut .language .language-en .en > span{ font-family: "PingFangSC-Light"; font-size:1.8rem;line-height: 3.6rem; padding: 0.2rem 0; color:#3E3F41;}
+
+/*.logoSearch css*/
+.logoSearch > .logo {padding-top: 1rem; max-width:372px; height: auto;}
+.logoSearch > .logo > a > img{ width: 100%;height: 100%;}
+.logoSearch .searchBox{width: 33.3rem; height: 5rem; background-color: #4A90E2;margin-top: 1.5rem; border-radius:1rem; padding-left: 0.5rem;}
+.logoSearch .searchBox input {padding:0 !important;}
+.logoSearch .searchBox .searchInput{ width: 25rem; height: 4rem; 
+    background-color: #FFFFFF;border-radius:5px;padding: 0 5px; margin-top: 0.5rem;}
+.logoSearch .searchBox .searchBtn{vertical-align: middle;
+    color:#FFFFFF;background-color:#4A90E2;border-width: 0px;line-height: 4.8rem;text-align: center;
+    padding-left: 1.5rem; font-size: 2.4rem;font-weight: bold; }
+.logoSearch .searchBox .searchBtn:hover{cursor: pointer;}
+
+/*nav css*/
+.nav{padding: 0;margin-top: 0px;background: #eeeeee; font-family: "PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial" ;}
+.nav .menu{box-sizing: border-box; height: 6rem;}
+.nav .menu > li {box-sizing: border-box;-moz-box-sizing:border-box; -webkit-box-sizing:border-box; 
+     float: left;height: 6rem; width: calc(100%/6); width: -moz-calc(100%/6);width: -webkit-calc(100%/6);
+border-left:solid 2px #9B9B9B;margin: 0 auto;text-align: center;} 
+.nav .menu > li > a{width: 100%; display: block; 
+    font-family: "PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial" ;
+     color:#4A90E2;font-size: 3rem;line-height: 6rem;}
+.nav .menu .homepage{border-left: none;position: relative;}
+.nav .menu .homepage .homeMenu{display: none;height: 30rem; background-color: rgba(63,121,189,0.8);padding-top: 2rem; height: auto;padding-bottom:1rem; }
+.nav .menu  .navItemActive{background-color: #4A90E2 !important;}
+.nav .menu  .navItemActive > a {  font-size:3.6rem; color: #4A90E2;}
+.nav .menu .homepage .fa-caret-down{padding-left: 1rem;width: 3rem;height: 1.6rem;}
+.nav .menu .homeMenu {height: auto;position: absolute;top:6rem; padding-bottom:1rem; }
+.nav .menu .homeMenu > ul {padding-left: 3rem;}
+.nav .menu .homeMenu > ul > li
+{text-align: left; font-family: "PingFangSC-Light","PingFangSC-Medium","PingFang-Regular","WenQuanYi Micro Hei", "Helvetica Neue","Helvetica", "Hiragino Sans GB", "tahoma","sans-serif","Microsoft YaHei","Arial" ;  font-size: 2.6rem; line-height: 4.5rem;list-style-type: disc ;color: #FFFFFF;}
+.nav .menu .homeMenu .msg{ margin-left: 6rem; }
+.nav .menu .homeMenu > ul > #liMsg,#liNO,#liDev,#liMore { font-family: "PingFangSC-Medium","PingFang-Regular","WenQuanYi Micro Hei", "Helvetica Neue","Helvetica", "Hiragino Sans GB", "tahoma","sans-serif","Microsoft YaHei","Arial"; font-weight: normal;}
+.nav .menu .homeMenu > ul >.title{ font-size: 3rem;font-weight: 600; color: #FFFFFF; }
+.nav .menu .homepage .homeMenu .ul.more .newFunction {color: #D0021B;}
+.bannerLeft .bannerRing .circleSymbol >li { margin-bottom: 2rem !important;}
+
+/*bannerCommunication css*/
+#bannerCommunication {position: relative;}
+#bannerCommunication .bannerCommunicationSide{ position: absolute; }
+#bannerCommunication .bannerCommunicationSide > .bannerLeft{width: 25rem;height: auto;padding-right: 5rem;}
+#bannerCommunication .bannerCommunicationSide >.bannerLeft > .bannerRing > .circleSymbol{ position: absolute;top:4rem;left:6rem; }
+#bannerCommunication .bannerCommunicationSide >.bannerLeft > .bannerRing > .circleSymbol > li {margin-bottom: 1.5rem;}
+#bannerCommunication .bannerCommunicationSide > .bannerLeft > .bannerRing > .circleSymbol > li > a >.circleBig{position: relative; width: 3.6rem; height: 3.6rem; border-radius: 50%; 
+    background-color: #A7E7FF;}
+#bannerCommunication .bannerCommunicationSide > .bannerLeft > .bannerRing > .circleSymbol > li > a > .circleBig > .circleSmall{width: 2.6rem;height: 2.6rem;border-radius: 50%;
+    background-color:#181E2C ; position: absolute;top:0.5rem;left: 0.5rem;}
+#bannerCommunication .bannerCommunicationSide > .bannerLeft > .bannerRing > .circleSymbol >li> a > .circleChose{position: relative;left:-0.6rem; width: 4.8rem;height: 4.8rem;
+    border-radius: 50%;background-color: #4A90E2;}
+#bannerCommunication .bannerCommunicationMain > img{ max-width: 100%;}
+
+/*banner Msg css*/
+#bannerMsg{	box-sizing: border-box; background-color: #FFFFFF;position: relative; padding-left: 100px;}
+/* #bannerMsg  .bannerMsgRight{width: 25rem;position: relative;} */
+#bannerMsg  .bannerMsgRight > .bannerRing > .circleSymbol > li > a >.circleRing{
+    position: relative; left:66%; border-radius: 50%; background-color: #4A90E2;}
+
+#bannerMsg  .bannerMsgRight > .bannerRing > .circleSymbol > li > a > .circleChose{
+    position: relative; left:66%;border-radius: 50%;background-color: #4A90E2;}
+/* #bannerMsg  .bannerMsgRight  .bannerMsgImg{position: absolute;left:-6rem;} */
+#bannerMsg  .bannerMsgRight > .bannerMsgImg > img{ width: 100% !important; }
+#bannerMsg .bannerMsgMain{height: auto;padding-left: 50px;}
+#bannerMsg .bannerMsgMain .bannerMsgDesc .briefTitle .mainTitle 
+{font-family:  "PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "WenQuanYi Micro Hei","sans-serif","Microsoft YaHei","Arial" ;
+    font-size: 4.2rem;line-height: 6rem; color:#4A90E2;padding-right: 8rem;}
+#bannerMsg .bannerMsgMain .bannerMsgDesc .briefTitle .subTitle {font-family: "WenQuanYi Micro Hei", "PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial" ;
+    font-size: 3.2rem;line-height: 6rem;color:#4A90E2;} 
+#bannerMsg .bannerMsgMain .msgDetail{ font-size: 2.6rem; line-height: 4.4rem; color: #4A90E2;font-weight: bold; }
+#bannerMsg .bannerMsgMain > ul > li {margin-bottom: 3rem;}
+#bannerMsg .bannerMsgRight > .bannerRing > .circleSymbol > li {margin-bottom: 2rem;}
+
+/*bannerService css*/
+.bannerService{background: #F5A623;position: absolute; }
+
+.bannerService > .bannerLeft >.bannerRing > .circleSymbol > li .circleBig{width: 3.6rem;height: 3.6rem;border-radius: 50%;background-color: #FFFFFF;position: relative; }
+.bannerService > .bannerLeft >.bannerRing > .circleSymbol > li .circleBig >.circleSmall{width: 2.6rem;height: 2.6rem;border-radius: 50%; background-color: #F5A623;
+    position: absolute;top:0.5rem;left:0.5rem;}
+.bannerService > .bannerLeft >.bannerRing > .circleSymbol > li > a> .circleChose{width:4.8rem;height: 4.8rem; border-radius: 50%;background-color: #FFFFFF;position: relative;left:-6px; }
+.bannerService > .bannerLeft >.bannerServiceImg {position: relative; }
+.bannerService .callServiceDesc{  padding-left: 20px; }
+.bannerService .callServiceDesc .callServiceWrap{overflow: hidden;}
+.bannerService .callServiceDesc > .callServiceWrap > .callServiceContent > li{ margin-bottom: 1rem; }
+/* .bannerService  .bannerLeft .bannerRing {margin-left: 6rem;margin-top:1rem;padding-top: 3rem;} */
+.bannerService  .bannerLeft .bannerRing .circleSymbol >li{margin-bottom: 2rem;}
+.bannerService .callServiceDesc .callServiceContent .briefTitle{ margin-bottom: 0.8rem;}
+.bannerService .callServiceDesc .callServiceContent .briefTitle .mainTitle{
+    font-family: "PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial";
+     font-size: 4.2rem; color: #FFFFFF;padding-right: 8rem; }
+.bannerService .callServiceDesc .callServiceContent .briefTitle .subTitle{
+    font-family: "PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; 
+    font-size: 3.2rem; color: #FFFFFF;}
+.bannerService .callServiceDesc  .callServiceContent > li {margin-bottom: 2rem;}
+.bannerService .callServiceDesc  .callServiceContent {color: #FFFFFF; }
+.bannerService .callServiceDesc  .callServiceContent .callDetail {
+    font-family: "PingFangSC-Light","PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","WenQuanYi Micro Hei", "Helvetica Neue","Helvetica", "Hiragino Sans GB", "tahoma","sans-serif","Microsoft YaHei","Arial";
+     font-size: 2.6rem; line-height: 4rem; color:#FFFFFF; font-weight: bold; }
+
+/*developService css*/
+.developService{background-color: #4A90E2;height: auto; width: 100%;padding-bottom:20px;}
+.developService >.circleSymbolWrap{width:26rem; height: 768px;padding-top: 5rem; position: relative;}
+.developService >.circleSymbolWrap > .bannerRing > .circleSymbol{position: relative;}
+.developService .bannerRing .circleSymbol >li { margin-bottom: 2rem !important;}
+.developService .bannerRing .circleSymbol >li { margin-bottom: 2rem !important;}
+.developService .circleSymbolWrap > .bannerRing > .circleSymbol >li> a > .circleRing{
+    position: relative; left: 66%; border-radius: 50%; right: 20px; background-color: #FFFFFF;}
+
+.developService .circleSymbolWrap > .bannerRing > .circleSymbol > li > a>.circleChose{
+   border-radius: 50%;background-color: #FFFFFF;position: relative;left:66%;}
+.developService .circleSymbolWrap >.bannerMsgImg{
+    position: relative; top:10px; right:0rem;}
+/* .developService .bannerDevMain 
+{padding-left: 9rem; margin-right: 26rem; padding-top: 6rem;overflow: hidden;} */
+.developService .bannerDevMain .devItemDesc {padding-right: 6rem;}
+.developService .bannerDevMain .devItemDesc > li { margin-bottom: 4rem; }
+.developService .bannerDevMain .devItemDesc .briefTitle .mainTitle 
+{ font-family: "PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; font-size: 4.2rem; color:#FFFFFF;line-height: 6rem; 
+    padding-right: 8rem; }
+.developService .bannerDevMain .devItemDesc .briefTitle .subTitle 
+{  font-family: "PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; font-size: 3.2rem;line-height: 6rem; color: #FFFFFF;padding-left: 2rem; }
+.developService .bannerDevMain .devItemDesc .msgDetail { font-size: 2.6rem; line-height: 4.2rem; color: #FFFFFF;  font-weight: bold;}
+
+/*moreService css*/
+.moreService{background-color: #FFFFFF;}
+.moreService >.circleSymbolWrap{padding-right: 3rem; }
+.layout .moreService >.circleSymbolWrap .bannerRing .circleSymbol {margin-left: 7rem;}
+.moreService .bannerRing .circleSymbol >li { margin-bottom: 2rem !important;}
+.layout .moreService .circleSymbolWrap > .bannerRing >.circleSymbol > li > a>.circleRing{
+  border-radius: 50%;position: relative;}
+
+.layout .moreService .circleSymbolWrap > .bannerRing >.circleSymbol > li> a>.circleChose
+{border-radius: 50%;background-color: #4A90E2;position: relative; left:-4px;}
+.moreService >.circleSymbolWrap > .bannerServiceImg{position: absolute;bottom:12rem;left:2rem;}
+.moreService .moreServiceDesc .moreServiceItems > li{margin-bottom: 2rem;}
+.moreService .moreServiceDesc{ padding-left: 2%;}
+.moreService .moreServiceDesc .moreServiceItems .briefTitle .mainTitle {
+     font-family: "PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; 
+     font-size: 4.2rem;color:#4A90E2;line-height: 6rem;   }
+.moreService .moreServiceDesc .moreServiceItems .moreDetail {font-weight: bold; font-size:2.6rem;line-height: 4rem; color: #4A90E2;}
+
+.layout.table .bannerMsg, .bannerService, .developService, .moreService{
+    width:100%;
+    height: auto !important;
+    padding-bottom: 30px; 
+    display: table;
+  }
+  .layout.table .bannerMsg>div{
+    display: table-cell;
+  }
+  .layout.table .rightSideWrap{
+      width:calc(15.6% - 50px) ;
+      min-width: 120px;
+      padding-right: 50px;
+   
+  }
+  .layout.table  .bannerMsgMain{
+      box-sizing: border-box;
+         width: 84.6% !important;
+  }	
+
+  .layout.table .bannerService{
+      width:100%;
+    display: table;
+  }
+  .layout.table .bannerService>div{
+    display: table-cell;
+  }
+  
+  
+  .layout.table .bannerLeft{
+      width:calc(15.6% - 50px);
+      min-width: 120px;
+      padding-right: 50px;
+  }
+  .layout.table  .callServiceDesc{
+      box-sizing: border-box;
+         width: 84.6% !important;
+  }	
+  
+  .layout.table  .developService{
+  box-sizing: border-box;
+    width:100%;
+    height: auto;
+    padding-bottom: 5rem; 
+    padding-left: 8rem;
+    display: table;
+  }
+  .layout.table  .developService>div{
+    display: table-cell;
+  }
+  .layout.table #devCircleContainer{
+    width:calc(15.6% - 50px);
+    min-width: 120px;
+    padding-right: 50px;
+  }
+  .layout.table .bannerDevMain{
+    box-sizing: border-box;
+    margin-top: 3.2rem !important;
+    padding-left: 50px;
+    width: 84.6%;
+  }	
+
+
+  .layout.table .moreService>div{
+    display: table-cell;
+  }
+  .layout.table .leftSideWrap{
+    width:calc(15.6% - 50px) ;
+    min-width: 120px;
+    padding-left: 50px;
+  }
+  .layout.table .moreServiceDesc{
+    width: 84.6%;
+  }
+  
+/*footer css*/
+.footer{box-sizing: border-box; width:100%; height: 8rem;background-color: #D8D8D8;padding: 0 3rem;}
+.footer> ul li{float: left;margin-right: 1rem; padding: 2.2rem 0;}
+.footer ul li span
+{font-family: "PingFangSC-Medium","PingFang-Regular","WenQuanYi Micro Hei", "Helvetica Neue","Helvetica", "Hiragino Sans GB", "tahoma","sans-serif","Microsoft YaHei","Arial" ;
+     font-size: 1.8rem;line-height: 3.6rem; color: #333333;  }
+
+
+/* self-adaption design */
+@media screen and (min-width:1440px) and (max-width:1600px) {
+    html{ font-size: 50%; }
+    #bannerMsg .bannerMsgMain .msgDetail{line-height: 4rem;color: #4A90E2;font-weight: bold; }
+    #bannerMsg .bannerMsgMain > ul > li {  margin-bottom: 3rem; }
+    .bannerMsgDesc {padding-top: 2.5rem;}
+    .bannerService .callServiceDesc .callServiceWrap .callServiceContent .callDetail {
+        font-size: 2.6rem;line-height: 4rem; font-weight: bold; }
+}
+
+@media screen and  (min-width:1366px) and (max-width:1440px) {
+    html{ font-size: 50%; }
+    #bannerMsg .bannerMsgMain > ul > li {margin-bottom: 2.5rem;}
+    #bannerMsg .bannerMsgMain .msgDetail{line-height: 3.6rem;color: #4A90E2;font-weight: bold; }
+    #bannerMsg .bannerMsgDesc {padding-top: 0px;}
+    .bannerService .callServiceDesc .callServiceWrap .callServiceContent .callDetail 
+    {font-size: 2.6rem;line-height: 4rem; font-weight: bold; }
+    .developService .bannerDevMain 
+    { margin-right: 30rem; padding-top: 0rem;overflow: hidden; }
+    .developService .bannerDevMain .devItemDesc > li { margin-bottom: 2rem; }
+}
+
+@media screen and  (max-width:1366px){
+    html {font-size: 50%; }
+    #bannerMsg .bannerMsgMain .msgDetail{line-height: 3.6rem;color: #4A90E2;font-weight: bold; }
+    #bannerMsg .bannerMsgMain > ul > li {  margin-bottom: 2.4rem; }
+    .developService .bannerDevMain .devItemDesc > li { margin-bottom: 3rem; }
+    .developService .bannerDevMain .devItemDesc .msgDetail {font-size: 2.6rem; line-height: 3.6rem; }
+    .bannerService .callServiceDesc .callServiceWrap .callServiceContent > li { margin-bottom: 1.8rem; }
+}

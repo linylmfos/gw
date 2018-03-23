@@ -1,0 +1,62 @@
+#communication{width:100%;margin: 0 auto;}
+.communicationContainer{ width: 1366px;padding:4rem 0;margin:0 auto;
+	margin-bottom: 4rem;font-family: "PingFangSC-Light","PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial"; 
+}
+/* .communication {padding: 4rem 10.8rem 0 10.8rem; } */
+.communication:hover{border-top:solid 1px #5395E3;} 
+.communication .communicationHeader{margin-bottom: 5rem;}
+.communication .communicationHeader .iconImg{margin-right: 3rem;}
+.communication .communicationHeader .iconDesc{width: 33.6rem;height: 6rem;margin-top: 2rem; padding: 2rem 3rem;
+	font-family: "PingFangSC-Medium","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial";font-weight: bold; font-size: 6rem; line-height: 6rem; font-weight: 700;
+	background-color: #B62881;border-radius: 4rem;letter-spacing: 0.6rem;text-align: center;color:#FFFFFF;}
+.communication .communicationMain  .layout.out .tabContainer > left 
+{ position:relative; max-width: 400px;min-width:200px !important;}
+.communication .communicationMain  .layout .tabContainer > left > .orderAndTitle {display:table;min-width:186px;}
+.communication .communicationMain  .layout .tabContainer > left > .orderAndTitle > .orderIcon 
+{ display:table-cell;vertical-align:middle;}
+
+.communication .communicationMain  .layout   .left > .orderAndTitle  .orderIcon  img{ width:100%; height:auto;}
+.communication .communicationMain  .layout   .left  .orderAndTitle  .orderTitle 
+{ font-family: "PingFangSC-Medium","PingFangSC-Light","PingFangSC-Medium","PingFang-Regular","PingFang-Thin", "tahoma","sans-serif","Microsoft YaHei","Arial";
+	font-size:3rem;font-weight: bold;line-height: 6rem;
+	padding-left: 10px;	display:table-cell;min-width:6rem;vertical-align:middle;}
+.communication .communicationMain .orderAndTitle{margin-right: 2rem;}
+.communication .communicationMain  .orderAndTitle .orderIcon, .orderTitle{display:table-cell;}
+.communication .communicationMain  .layout .center { width: 20% !important;} 
+.communication .communicationMain  .layout .center .dotline 
+{position:relative;top:-6rem;height:6px; border-top:dotted 2px #F00;border-bottom:dotted 2px #F00;border-width:2px;}
+
+.communication .communicationMain .communicationMainDesc  .orderAndTitle .orderTitle
+{font-family: "PingfangSC-Medium"; font-size: 2.8rem;font-weight:bold;
+	 color:#333333;position: absolute;top:3.6rem;left:14rem;margin-left: 3rem;}
+.communication .communicationMain .itemContent {position: relative;font-size: 2.8rem;}
+.communication .communicationMain .itemContent dd
+ { letter-spacing: 4px;font-family: "PingFangSC-Medium","PingFang-Regular","WenQuanYi Micro Hei", "Helvetica Neue","Helvetica", "Hiragino Sans GB", "tahoma","sans-serif","Microsoft YaHei","Arial" ;
+	font-size: 2.8rem;line-height: 5.6rem;font-weight: normal; text-align: right; }
+.communication .communicationMain .jointMark {position: absolute;top:6rem;left:30rem;}
+ .communication .communicationMain .jointMark>dl>dd{ width: auto;border-top: dotted 2px #B82884;margin: 8px;} 
+.communication .communicationMain .triangle > img { width: 100%;height: 100%; -webkit-filter: blur(10px);-moz-filter: blur(10px);filter: blur(10px);
+	-ms-filter: blur(10px);filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); 
+	width:100%;height:100%; }
+
+	.layout.table .tabContainer{width:100%;	height: 100px;	margin-bottom: 20px;display: table;  }
+	  .layout.table .tabContainer>div{	display: table-cell;  }
+	 
+	  .layout.table .right{width: 60%;vertical-align:middle; }
+
+/* responsive design */
+@media screen and (min-width:1600px) and (max-width:1920px) {
+	.communication .communicationMain .jointMark>dl>dd{ width: 32rem 0;border-top: dotted 2px #B82884;margin: 8px;} 
+}
+@media screen and (min-width:1440px) and (max-width:1600px) {
+	html {font-size: 50%;}
+    .communication .communicationMain .jointMark>dl>dd{ width: 27rem;border-top: dotted 2px #B82884;margin: 8px;} 
+}	
+@media screen and (min-width:1366px) and (max-width:1440px) {
+	html {font-size: 50%;}
+    .communication .communicationMain .jointMark>dl>dd{ width: 18rem;border-top: dotted 2px #B82884;margin: 8px;} 
+}	
+@media screen and (max-width:1366px) {
+	html {font-size: 50%;}
+    .communication .communicationMain .jointMark>dl>dd{ width:0px;} 
+}	
